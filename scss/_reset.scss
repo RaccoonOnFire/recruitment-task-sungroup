@@ -1,0 +1,44 @@
+@use "./colors" as colors;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    overflow-x: hidden;
+    background-color: #F9F9FA;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: colors.$primary-grey;
+}
+h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: colors.$primary-grey;
+}
+p {
+    font-family: 'Inter', sans-serif;
+}
+span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: colors.$secondary-color;
+}

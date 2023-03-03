@@ -1,0 +1,31 @@
+@use "./header" as header;
+@use "./reset" as reset;
+@use "./colors" as colors;
+@use "./buttons" as buttons;
+@use "./about" as about;
+@use "./features" as features;
+@use "./content" as content;
+@use "./testimonals" as testimonals;
+.container {
+    width: 100%;
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 1366px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .container {
+        
+    }
+}
+@media only screen and (max-width: 375px) {
+    .container {
+        
+    }
+}

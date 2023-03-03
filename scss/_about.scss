@@ -1,0 +1,30 @@
+@use "./colors" as colors;
+
+.about {
+    display: flex;
+    justify-content: flex-end;
+    background-color: colors.$primary-grey;
+    width: 100%;
+    color: colors.$primary-white;
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding-left: 280px;
+        padding-right:109px;
+        h1 {
+            font-weight: 600;
+            font-size: 42px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            max-width: 553px;
+        }
+    }
+    img {
+        max-width: 978px;
+    }
+}
