@@ -1,7 +1,7 @@
 @use "./colors" as colors;
 .primary-btn {
     padding: 14px 24px;
-    max-width:fit-content;
+    max-width: fit-content;
     background-color: colors.$primary-color;
     font-size: 16px;
     font-weight: 500;
@@ -13,4 +13,20 @@
 }
 .primary-btn:hover {
     background-color: colors.$primary-hover;
+}
+.secondary-btn {
+    padding: 16px 32px;
+    border: 2px solid colors.$primary-color;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: colors.$primary-color;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.secondary-btn:hover {
+    background: #F7F9FF;
 }

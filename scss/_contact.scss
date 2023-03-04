@@ -1,0 +1,102 @@
+@use "./colors" as colors;
+
+.contact {
+    background-color: colors.$primary-white;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    .contact-content {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+
+        .contact-form-container {
+            padding: 48px;
+            border-radius: 8px;
+            background-color: #f7f9ff;
+            h2 {
+                font-size: 28px;
+                line-height: 42px;
+                padding-bottom: 32px;
+            }
+            form {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                gap: 20px;
+                .input-field {
+                    position: relative;
+                }
+                .input-static {
+                    width: 274px;
+                    padding: 16px 20px;
+                    border-radius: 2px;
+                    font-family: "Inter";
+                    font-size: 16px;
+                    background-color: colors.$primary-white;
+                    border: 1px solid #ecedf0;
+                    border-radius: 2px;
+                    color: #242529;
+                    transition: border 0.2s;
+                }
+                .input-static::placeholder {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    color: #858993;
+                }
+                .input-static:hover {
+                    border-color: #cfd3db;
+                }
+                .input-static:focus {
+                    outline: none;
+                    border-color: #8db3ff;
+                }
+                .input-static:invalid {
+                    border-color: #c90d0d;
+                }
+                .label {
+                    position: absolute;
+                    top: -12px;
+                    left: 12px;
+                    padding: 0px 8px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 24px;
+                    background-color: colors.$primary-white;
+                    color: #242529;
+                    visibility: hidden;
+                }
+
+                .text-area-static {
+                    min-width: 568px;
+                    min-height: 200px;
+                    resize: none;
+                }
+                .checkbox {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #adb3c0;
+                    border-radius: 2px;
+                    background-color: transparent;
+                }
+                .checkbox:hover {
+                    border: 1px solid #6E9EFF;
+                }
+                .checkbox-label {
+                    font-family: "Inter";
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #242529;
+                    max-width: 80%;
+                }
+                .submit-btn {
+                }
+            }
+        }
+        img {
+            max-width: 664px;
+            border-radius: 8px;
+        }
+    }
+}

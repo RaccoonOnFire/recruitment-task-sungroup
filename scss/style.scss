@@ -6,6 +6,11 @@
 @use "./features" as features;
 @use "./content" as content;
 @use "./testimonals" as testimonals;
+@use "./blog" as blog;
+@use "./cta" as cta;
+@use "./contact" as contact;
+@use "./footer" as footer;
+
 .container {
     width: 100%;
     max-width: 1360px;

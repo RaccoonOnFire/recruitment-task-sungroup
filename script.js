@@ -14,3 +14,26 @@ const toggleMenu = () => {
 }
 
 hamburgerBtn.addEventListener("click", toggleMenu)
+
+//contact form
+/*
+const fname = document.querySelector("#fname")
+const fnameLabel = document.querySelector(".label-fname")
+const sname = document.querySelector("#sname")
+const snameLabel = document.querySelector(".label")
+const email = document.querySelector("#email")
+const tel = document.querySelector("#tel")
+const txt = document.querySelector("#txt")
+
+const labelChange = () => {
+    if(fname.value != "") {
+        fnameLabel.classList.add("visible")
+    }
+    else {
+        fnameLabel.classList.remove("visible")
+    }
+}
+
+fname.addEventListener("keydown", labelChange)*/
+
+

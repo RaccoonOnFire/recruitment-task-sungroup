@@ -1,0 +1,37 @@
+@use "./colors" as colors;
+
+.cta {
+    background-color: colors.$primary-grey;
+    border-radius: 8px;
+    margin-bottom: 128px;
+    .cta-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        span {
+            color: colors.$primary-white;
+            padding-top: 80px;
+        }
+        h2 {
+            color: colors.$primary-white;
+            padding-top: 12px;
+            padding-bottom: 20px;
+        }
+        p {
+            color: colors.$primary-white;
+            padding-bottom: 32px;
+            max-width: 555px;
+            
+        }
+        button {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .cta {
+        margin-bottom: 64px;
+    }
+}
