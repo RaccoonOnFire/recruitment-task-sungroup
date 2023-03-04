@@ -38,6 +38,9 @@
             color: colors.$primary-hover;
         }
     }
+    button {
+        padding:14px 24px;
+    }
 }
 .hamburger-menu {
     display: none;

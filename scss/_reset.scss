@@ -6,9 +6,12 @@
 }
 body {
     overflow-x: hidden;
-    background-color: #F9F9FA;
-    font-family: 'Poppins';
+    background-color: #f9f9fa;
+    font-family: "Poppins";
 }
+body::-webkit-scrollbar {
+    display: none;
+} // for development
 a {
     text-decoration: none;
     color: inherit;
@@ -33,7 +36,7 @@ h3 {
     color: colors.$primary-grey;
 }
 p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 span {
     font-weight: 500;

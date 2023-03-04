@@ -35,16 +35,19 @@
             </div>
         </header>
         <main>
-
             <section class="about">
                 <div class="about-container">
-                    <h1>Nagłówek traktujący o działalności firmy</h1>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+                    <h1>Nagłówek traktujący<br />o działalności firmy</h1>
+                    <p>
+                        But I must explain to you how all this mistaken idea of
+                        denouncing pleasure and praising pain was born and I
+                        will give you a complete account of the system.
+                    </p>
                     <button class="primary-btn">Dowiedz się więcej</button>
                 </div>
-                
+
                 <div class="about-image-container">
-                    <img src="./images/about.jpg" alt="Photo of out team">
+                    <img src="./images/about.jpg" alt="Photo of out team" />
                 </div>
             </section>
 
@@ -87,6 +90,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="content">
                 <div class="container">
                     <div class="content-items">
@@ -210,6 +214,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="container blog">
                 <div class="blog-heading">
                     <h2>Blog</h2>
@@ -289,6 +294,7 @@
                     </article>
                 </div>
             </section>
+
             <section class="container cta">
                 <div class="cta-content">
                     <span>Overline</span>
@@ -301,101 +307,61 @@
                 </div>
             </section>
 
-            <!-- 
             <section class="contact">
-                <div class="container contact-content">
+                <div class="container contact-layout">
                     <div class="contact-form-container">
                         <h2>Napisz do nas</h2>
-                        <form action="#">
-                            <div class="input-field">
+                        <form action="">
+                            <div class="input-container">
                                 <input
                                     type="text"
-                                    id="fname"
-                                    class="input-static"
+                                    class="input-medium input-style"
                                     placeholder="Imię"
                                 />
-                                <label class="label label-fname" for="fname"
-                                    >Imię</label
-                                >
-                            </div>
-                            <div class="input-field">
                                 <input
                                     type="text"
-                                    id="sname"
-                                    class="input-static"
+                                    class="input-medium input-style"
                                     placeholder="Nazwisko"
                                 />
-                                <label class="label label-sname" for="sname"
-                                    >Nazwisko</label
-                                >
-                            </div>
-                            <div class="input-field">
                                 <input
-                                    type="email"
-                                    id="email"
-                                    class="input-static"
+                                    type="text"
+                                    class="input-medium input-style"
                                     placeholder="Adres e-mail"
                                 />
-                                <label class="label label-email" for="email"
-                                    >Adres e-mail</label
-                                >
-                            </div>
-                            <div class="input-field">
                                 <input
-                                    type="tel"
-                                    id="tel"
-                                    class="input-static"
-                                    minlength="9"
-                                    maxlength="14"
-                                    pattern="[0-9]{9,}"
+                                    type="text"
+                                    class="input-medium input-style"
                                     placeholder="Numer telefonu"
                                 />
-                                <label class="label label-tel" for="tel"
-                                    >Numer telefonu</label
-                                >
-                            </div>
-                            <div class="input-field">
                                 <textarea
-                                    class="input-static text-area-static"
-                                    id="txt"
+                                    class="input-textarea input-style"
                                     placeholder="Twoja wiadomość"
                                 ></textarea>
-                                <label class="label label-txt" for="txt"
-                                    >Twoja wiadomość</label
-                                >
                             </div>
-
-                            <div>
-                                <input
-                                    type="checkbox"
-                                    id="checkbox"
-                                    class="checkbox"
-                                />
-                                <label for="checkbox" class="checkbox-label"
+                            <div class="checkbox-container">
+                                <input type="checkbox" />
+                                <label for="checkbox"
                                     >Zapoznałem się z regulaminem i wyrażam
                                     zgodę na przetwarzanie moich danych
-                                    osobowych przez Sungroup.pl</label
-                                >
+                                    osobowych przez Sungroup.pl
+                                </label>
                             </div>
-
-                            <input
-                                type="submit"
-                                class="primary-btn submit-btn"
-                                value="Wyślij wiadomość"
-                            />
+                            <div class="submit-container">
+                                <button type="submit" class="primary-btn">Wyślij wiadomość</button>
+                            </div>
                         </form>
                     </div>
-                    <img
-                        src="./images/contact.jpg"
-                        alt="Photo of people exchanging phone numbers"
-                    />
+                    <div class="contact-image-container">
+                        <img
+                            src="./images/contact.jpg"
+                            alt="Photo of people exchanging phone numbers"
+                        />
+                    </div>
                 </div>
             </section>
-            todo -->
-
         </main>
-        <footer class="container footer">
-            <div class="upper-footer">
+        <footer class="footer">
+            <div class="container upper-footer">
                 <img src="./images/SunPage.jpg" alt="SunPage logo" />
                 <ul>
                     <li><a href="#">O nas</a></li>
@@ -403,8 +369,8 @@
                     <li><a href="#">Kontakt</a></li>
                 </ul>
             </div>
-           <!--  <hr />-->
-            <div class="lower-footer">
+            <hr />
+            <div class="container lower-footer">
                 <ul class="footer-copywrights">
                     <li>© Copyrights 2021 Sungroup</li>
                     <li><a href="">Polityka prywatności</a></li>

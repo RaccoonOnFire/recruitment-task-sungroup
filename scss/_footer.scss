@@ -1,7 +1,6 @@
 @use "./colors" as colors;
 
 .footer {
-    position: relative;
     .upper-footer {
         display: flex;
         justify-content: space-between;
@@ -28,9 +27,9 @@
         }
     }
     hr {
-        position: absolute;
         width: 100vw;
         border: 1px solid #ecedf0;
+        border-top: none;
     }
     .lower-footer {
         display: flex;
@@ -39,12 +38,19 @@
         padding-bottom: 24px;
         .footer-copywrights {
             display: flex;
+            align-items: center;
             gap: 48px;
             font-family: "Inter";
             font-weight: 400;
             font-size: 14px;
             line-height: 26px;
             color: #858993;
+            a{
+                transition: color 0.2s;
+            }
+            a:hover {
+                color:colors.$primary-hover;
+            }
         }
         .footer-socials {
             display: flex;
@@ -78,8 +84,6 @@
                 flex-direction: row;
                 align-items: center;
                 padding-top: 40px;
-            }
-            img {
             }
         }
         .lower-footer {

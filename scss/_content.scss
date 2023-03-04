@@ -14,10 +14,8 @@
             gap: 264px;
             div {
                 margin: auto;
-                span {
-                    padding-bottom: 12px;
-                }
                 h2 {
+                    padding-top: 12px;
                     padding-bottom: 20px;
                     max-width: 553px;
                 }
@@ -34,6 +32,7 @@
     }
     hr {
         border: 1px solid #dee1e6;
+        border-top: none;
     }
 }
 @media only screen and (max-width: 820px) {
