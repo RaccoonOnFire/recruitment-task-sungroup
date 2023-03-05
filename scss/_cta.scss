@@ -4,29 +4,29 @@
     background-color: colors.$primary-grey;
     border-radius: 8px;
     margin-bottom: 128px;
-    .cta-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        span {
-            color: colors.$primary-white;
-            padding-top: 80px;
-        }
-        h2 {
-            color: colors.$primary-white;
-            padding-top: 12px;
-            padding-bottom: 20px;
-        }
-        p {
-            padding-bottom: 32px;
-            max-width: 555px;
-            line-height: 28px;
-            color: colors.$primary-white;
-        }
-        button {
-            margin-bottom: 80px;
-        }
+}
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    span {
+        color: colors.$primary-white;
+        padding-top: 80px;
+    }
+    h2 {
+        color: colors.$primary-white;
+        padding-top: 12px;
+        padding-bottom: 20px;
+    }
+    p {
+        padding-bottom: 32px;
+        max-width: 555px;
+        line-height: 28px;
+        color: colors.$primary-white;
+    }
+    button {
+        margin-bottom: 80px;
     }
 }
 

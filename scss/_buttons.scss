@@ -1,33 +1,30 @@
 @use "./colors" as colors;
-.primary-btn {
+@mixin button {
     padding: 16px 32px;
     max-width: fit-content;
     font-family: "Poppins";
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.primary-btn {
     background-color: colors.$primary-color;
     color: colors.$primary-white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
+    @include button;
+}
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid colors.$primary-color;
+    font-family: "Poppins";
+    color: colors.$primary-color;
+    @include button;
 }
 .primary-btn:hover {
     background-color: colors.$primary-hover;
-}
-.secondary-btn {
-    padding: 16px 32px;
-    border: 2px solid colors.$primary-color;
-    border-radius: 4px;
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: colors.$primary-color;
-    background-color: transparent;
-    cursor: pointer;
-    transition: background-color 0.2s;
 }
 .secondary-btn:hover {
     background: #f7f9ff;

@@ -9,7 +9,7 @@
 }
 .custom-checkbox input {
     position: absolute;
-    top:4px;
+    top: 4px;
     opacity: 0;
     height: 20px;
     width: 20px;
@@ -18,7 +18,7 @@
 }
 .checkmark {
     position: absolute;
-    top:4px;
+    top: 4px;
     height: 20px;
     width: 20px;
     border: 1px solid #adb3c0;
@@ -30,8 +30,8 @@
 
 .shadow {
     position: absolute;
-    top:-4px;
-    
+    top: -4px;
+
     left: -8px;
     width: 36px;
     height: 36px;
@@ -72,14 +72,14 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-@media only screen and (max-width: 1260px) { 
+@media only screen and (max-width: 1260px) {
     .custom-checkbox .checkmark:after {
-        left:6px;
+        left: 6px;
     }
     .shadow {
         left: 4px;
     }
     .checkmark {
-        left:12px;
+        left: 12px;
     }
 }
