@@ -591,6 +591,68 @@ span {
   flex-wrap: wrap;
   gap: 20px;
 }
+.input-container div {
+  position: relative;
+}
+.input-container input,
+.input-container textarea {
+  padding: 16px 20px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  border: 1px solid #ecedf0;
+  border-radius: 2px;
+  color: #858993;
+  transition: border 0.2s;
+}
+.input-container input:hover,
+.input-container textarea:hover {
+  border: 1px solid #cfd3db;
+}
+.input-container input:focus,
+.input-container textarea:focus {
+  border: 1px solid #8db3ff;
+  color: #242529;
+  outline: none;
+}
+.input-container input:active,
+.input-container textarea:active {
+  color: #242529;
+}
+.input-container .input-filled {
+  border: 1px solid #329f32;
+}
+.input-container .input-error {
+  border: 1px solid #c90d0d;
+}
+.input-container .input-error-notification {
+  position: absolute;
+  top: 52px;
+  left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #c90d0d;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.input-container label {
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  padding: 0px 8px;
+  background: #ffffff;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #242529;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
 
 .input-medium {
   max-width: 274px;
@@ -606,16 +668,8 @@ span {
   height: 200px;
   resize: none;
 }
-
-.input-style {
-  padding: 16px 20px;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  border: 1px solid #ecedf0;
-  border-radius: 2px;
-  color: #858993;
+.input-textarea .input-error-notification {
+  top: 198px;
 }
 
 .contact-image-container img {
@@ -645,11 +699,11 @@ span {
 }
 
 @media only screen and (max-width: 1366px) {
-  .input-style {
-    padding: 12px 18px;
-  }
   .input-textarea {
     height: 100px;
+  }
+  .input-textarea .input-error-notification {
+    top: 98px;
   }
 }
 @media only screen and (max-width: 1260px) {
@@ -758,7 +812,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -837,7 +891,7 @@ span {
 }
 
 .custom-checkbox input:hover + .checkmark {
-  border: 1px solid #6e9eff;
+  border: 1px solid #6E9EFF;
 }
 
 .custom-checkbox input:hover ~ .shadow {
@@ -845,11 +899,11 @@ span {
 }
 
 .custom-checkbox input:checked ~ .checkmark {
-  background-color: #6e9eff;
+  background-color: #6E9EFF;
 }
 
 .custom-checkbox input:checked ~ .checkmark {
-  border: 1px solid #6e9eff;
+  border: 1px solid #6E9EFF;
 }
 
 .checkmark:after {
@@ -867,7 +921,7 @@ span {
   top: 2px;
   width: 4px;
   height: 10px;
-  border: solid white;
+  border: solid #ffffff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }

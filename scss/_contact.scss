@@ -27,6 +27,68 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    div {
+        position: relative;
+    }
+    input,
+    textarea {
+        padding: 16px 20px;
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        border: 1px solid #ecedf0;
+        border-radius: 2px;
+        color: #858993;
+        transition: border 0.2s;
+    }
+    input:hover,
+    textarea:hover {
+        border: 1px solid #cfd3db;
+    }
+    input:focus,
+    textarea:focus {
+        border: 1px solid #8db3ff;
+        color: colors.$primary-grey;
+        outline: none;
+    }
+    input:active,
+    textarea:active {
+        color: colors.$primary-grey;
+    }
+    .input-filled {
+        border: 1px solid colors.$valid;
+    }
+    .input-error {
+        border: 1px solid colors.$error;
+    }
+    .input-error-notification {
+        position: absolute;
+        top: 52px;
+        left: 10px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        color: colors.$error;
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+    label {
+        position: absolute;
+        top: -12px;
+        left: 12px;
+        padding: 0px 8px;
+        background: colors.$primary-white;
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        color: #242529;
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
 }
 .input-medium {
     max-width: 274px;
@@ -40,16 +102,9 @@
     width: 100%;
     height: 200px;
     resize: none;
-}
-.input-style {
-    padding: 16px 20px;
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    border: 1px solid #ecedf0;
-    border-radius: 2px;
-    color: #858993;
+    .input-error-notification {
+        top:198px;
+    }
 }
 .contact-image-container {
     img {
@@ -77,11 +132,11 @@
     justify-content: flex-end;
 }
 @media only screen and (max-width: 1366px) {
-    .input-style {
-        padding: 12px 18px;
-    }
     .input-textarea {
         height: 100px;
+        .input-error-notification {
+            top:98px;
+        }
     }
 }
 @media only screen and (max-width: 1260px) {
@@ -121,7 +176,6 @@
         max-width: 400px;
     }
     .checkbox-container {
-        
         max-width: 400px;
         text-align: center;
     }

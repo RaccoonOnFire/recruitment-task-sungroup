@@ -41,16 +41,16 @@
     z-index: 1;
 }
 .custom-checkbox input:hover + .checkmark {
-    border: 1px solid #6e9eff;
+    border: 1px solid colors.$primary-color;
 }
 .custom-checkbox input:hover ~ .shadow {
     background-color: #e5eeff;
 }
 .custom-checkbox input:checked ~ .checkmark {
-    background-color: #6e9eff;
+    background-color: colors.$primary-color;
 }
 .custom-checkbox input:checked ~ .checkmark {
-    border: 1px solid #6e9eff;
+    border: 1px solid colors.$primary-color;
 }
 
 .checkmark:after {
@@ -66,7 +66,7 @@
     top: 2px;
     width: 4px;
     height: 10px;
-    border: solid white;
+    border: solid colors.$primary-white;
     border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
