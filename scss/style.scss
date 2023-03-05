@@ -17,7 +17,9 @@
     margin-right: auto;
     margin-left: auto;
 }
-
+.fixed-position {
+    overflow: hidden
+ }
 @media only screen and (max-width: 1366px) {
     .container {
         padding-left: 10px;

@@ -1,7 +1,14 @@
 @use "./colors" as colors;
 .header {
+    position: fixed;
+    border-bottom: 1px solid #eeeeee;
     background-color: colors.$primary-white;
     width: 100%;
+    z-index: 10;
+    transition: transform 0.2s;
+}
+.header-hidden {
+    transform: translateY(-101px);
 }
 .header-wrapper {
     display: flex;
@@ -23,7 +30,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 49px; //one pixel added
+    gap: 49px;
     ul {
         display: flex;
         flex-direction: row;
@@ -60,14 +67,16 @@
         display: block;
     }
     .header-menu {
+        overflow: hidden;
         position: absolute;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         background-color: colors.$primary-white;
         top: 90px;
         left: -100%;
         padding-top: 48px;
         padding-bottom: 48px;
+        height: 100vh;
         width: 100%;
         transition: left 0.2s;
         ul {

@@ -1,19 +1,44 @@
 //hamburger menu script
 
-const hamburgerBtn = document.querySelector(".hamburger-menu")
+const body = document.querySelector("body")
 const headerMenu = document.querySelector(".header-menu")
+const hamburgerBtn = document.querySelector(".hamburger-menu")
+const aboutBtn = document.querySelector(".about-btn")
+const blogBtn = document.querySelector(".blog-btn")
+const contactBtn = document.querySelector(".contact-btn")
 const bar1 = document.querySelector("#bar1")
 const bar2 = document.querySelector("#bar2")
 const bar3 = document.querySelector("#bar3")
 
 const toggleMenu = () => {
-    headerMenu.classList.toggle("show-menu")
-    bar1.classList.toggle("bar1-animation")
-    bar2.classList.toggle("bar2-animation")
-    bar3.classList.toggle("bar3-animation")
+    if (window.innerWidth < 821) {
+        body.classList.toggle("fixed-position")
+        headerMenu.classList.toggle("show-menu")
+        bar1.classList.toggle("bar1-animation")
+        bar2.classList.toggle("bar2-animation")
+        bar3.classList.toggle("bar3-animation")
+    }
 }
 
 hamburgerBtn.addEventListener("click", toggleMenu)
+blogBtn.addEventListener("click", toggleMenu)
+contactBtn.addEventListener("click", toggleMenu)
+aboutBtn.addEventListener("click", toggleMenu)
+
+//scroll script
+
+const header = document.querySelector(".header")
+let lastScrollY = window.scrollY
+
+const scrollHandler = () => {
+    if (lastScrollY < window.scrollY) {
+        header.classList.add("header-hidden")
+    } else {
+        header.classList.remove("header-hidden")
+    }
+    lastScrollY = window.scrollY
+}
+window.addEventListener("scroll", scrollHandler)
 
 //input label script
 
@@ -72,7 +97,8 @@ const telError = document.querySelector(".tel-error")
 const txtError = document.querySelector(".txt-error")
 
 const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
-const telRegex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/
+const telRegex =
+    /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/
 
 const validateForm = (event) => {
     if (fname.value.length > 0) {
@@ -91,16 +117,16 @@ const validateForm = (event) => {
     } else {
         sname.classList.add("input-error")
         snameError.style.opacity = 1
-    } 
+    }
 
     if (email.value.match(emailRegex)) {
         email.classList.remove("input-error")
         email.classList.add("input-filled")
         emailError.style.opacity = 0
-    } else{
+    } else {
         email.classList.add("input-error")
         emailError.style.opacity = 1
-    } 
+    }
 
     if (tel.value.match(telRegex)) {
         tel.classList.remove("input-error")
@@ -109,7 +135,7 @@ const validateForm = (event) => {
     } else {
         tel.classList.add("input-error")
         telError.style.opacity = 1
-    } 
+    }
 
     if (txt.value.length > 0) {
         txt.classList.remove("input-error")
@@ -118,7 +144,7 @@ const validateForm = (event) => {
     } else {
         txt.classList.add("input-error")
         txtError.style.opacity = 1
-    } 
+    }
     event.preventDefault()
 }
 

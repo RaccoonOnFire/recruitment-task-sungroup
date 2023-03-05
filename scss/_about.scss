@@ -2,6 +2,7 @@
 
 .about {
     display: flex;
+    padding-top: 100px;
     background-color: colors.$primary-grey;
 }
 .about-image-container {
@@ -43,6 +44,7 @@
 @media only screen and (max-width: 1800px) {
     .about-container {
         padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media only screen and (max-width: 1250px) {
@@ -65,6 +67,13 @@
         }
     }
 }
+
+@media only screen and (max-width: 820px) {
+    .about{
+        
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .about-container {
         h1 {
