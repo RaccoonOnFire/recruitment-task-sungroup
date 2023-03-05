@@ -10,7 +10,7 @@
 @use "./cta" as cta;
 @use "./contact" as contact;
 @use "./footer" as footer;
-
+@use "./custom-checkbox" as checkbox;
 .container {
     width: 100%;
     max-width: 1360px;

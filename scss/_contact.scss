@@ -60,7 +60,7 @@
 }
 .checkbox-container {
     display: flex;
-    gap: 15px;
+    gap: 5px;
     padding-top: 24px;
     padding-bottom: 32px;
     font-family: "Inter";
@@ -68,10 +68,6 @@
     font-size: 14px;
     line-height: 26px;
     color: #242529;
-    input {
-        margin-top: -20px;
-        width: 30px;
-    }
     label {
         display: block;
     }
@@ -108,9 +104,14 @@
         max-width: 820px;
     }
     .checkbox-container {
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .submit-container {
         justify-content: center;
     }
@@ -118,5 +119,10 @@
 @media only screen and (max-width: 935px) {
     .input-textarea {
         max-width: 400px;
+    }
+    .checkbox-container {
+        
+        max-width: 400px;
+        text-align: center;
     }
 }
