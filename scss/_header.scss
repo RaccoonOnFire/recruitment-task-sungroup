@@ -19,7 +19,6 @@
     width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
-
     z-index: 10;
     img {
         margin: auto;
@@ -56,13 +55,16 @@
     z-index: 10;
     div {
         margin: 8px;
-        width: 50px;
-        height: 5px;
-        background-color: colors.$primary-color;
+        width: 45px;
+        height: 3px;
+        background-color: colors.$primary-grey;
         border-radius: 5px;
     }
 }
 @media only screen and (max-width: 820px) {
+    .header-wrapper {
+        padding: 10px;
+    }
     .hamburger-menu {
         display: block;
     }
@@ -72,7 +74,7 @@
         flex-direction: column;
         justify-content: flex-start;
         background-color: colors.$primary-white;
-        top: 90px;
+        top: 62px;
         left: -100%;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -99,9 +101,9 @@
         transform: translateY(-100px);
     }
     .bar2-animation {
-        transform: rotate(45deg);
+        transform: rotate(45deg) translateY(-1px);
     }
     .bar3-animation {
-        transform: rotate(-45deg) translateY(-10px) translateX(9px);
+        transform: rotate(-45deg) translateY(-9px) translateX(9px);
     }
 }

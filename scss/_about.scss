@@ -4,14 +4,10 @@
     display: flex;
     padding-top: 100px;
     background-color: colors.$primary-grey;
-}
-.about-image-container {
     img {
-        max-width: 978px;
-        height: auto;
         display: block;
+        max-width: 100%;
     }
-    max-width: 978px;
 }
 .about-container {
     display: flex;
@@ -51,6 +47,7 @@
     .about {
         flex-direction: column;
         text-align: center;
+        img {width:100%;}
     }
     .about-container {
         padding-top: 64px;

@@ -31,8 +31,11 @@
             padding-bottom: 32px;
         }
     }
-    img {
-        max-width: 548px;
+
+}
+@media only screen and (max-width: 1366px) {
+    .content-item {
+        gap: 64px;
     }
 }
 @media only screen and (max-width: 820px) {

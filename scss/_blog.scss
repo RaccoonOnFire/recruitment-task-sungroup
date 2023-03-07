@@ -35,7 +35,6 @@
     align-items: center;
     gap: 8px;
     img {
-        max-width: 14px;
         margin-left: 3px;
     }
     p {
@@ -50,10 +49,25 @@
 }
 @media only screen and (max-width: 820px) {
     .blog {
+        display: flex;
+        flex-direction: column;
         padding-top: 64px;
         padding-bottom: 64px;
+        align-items: center;
+    }
+    .blog-heading {
+        max-width: 432px;
+        width: 100%;
+        justify-content: space-between;
     }
     .blog-articles {
         flex-direction: column;
+        align-items: center;
+        article {
+            max-width: 432px;
+        }
+    }
+    .article-photo {
+        width: 100%;
     }
 }

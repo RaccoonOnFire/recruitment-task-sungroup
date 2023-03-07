@@ -5,25 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500;600&display=swap"
-            rel="stylesheet"
-        />
+
         <title>SunPage</title>
     </head>
     <body>
         <header class="header">
             <div class="container header-wrapper">
                 <a href="#"
-                    ><img src="./images/SunPage.jpg" alt="SunPage logo" />
+                    ><img
+                        src="./images/SunPage.png"
+                        alt="SunPage logo"
+                        width="102"
+                        height="22"
+                        loading="lazy"
+                    />
                 </a>
                 <div class="header-menu">
                     <ul>
                         <li><a href="#about" class="about-btn">O nas</a></li>
                         <li><a href="#blog" class="blog-btn">Blog</a></li>
-                        <li><a href="#contact" class="contact-btn">Kontakt</a></li>
+                        <li>
+                            <a href="#contact" class="contact-btn">Kontakt</a>
+                        </li>
                     </ul>
                     <button class="primary-btn">Porozmawiajmy</button>
                 </div>
@@ -45,9 +48,14 @@
                     </p>
                     <button class="primary-btn">Dowiedz się więcej</button>
                 </div>
-
-                <div class="about-image-container">
-                    <img src="./images/about.jpg" alt="Photo of out team" />
+                <div>
+                    <img
+                        src="./images/about.jpg"
+                        alt="Photo of out team"
+                        width="978"
+                        height="800"
+                        loading="lazy"
+                    />
                 </div>
             </section>
 
@@ -78,7 +86,13 @@
                         </div>
                     </div>
                     <div class="feature-item">
-                        <img src="./icons/icon.svg" alt="" />
+                        <img
+                            src="./icons/icon.svg"
+                            alt=" "
+                            width="56"
+                            height="56"
+                            loading="lazy"
+                        />
                         <div class="feature-description">
                             <h3>Nagłówek w kilku słowach</h3>
                             <p>
@@ -114,6 +128,9 @@
                             <img
                                 src="./images/content1.jpg"
                                 alt="Services photo"
+                                width="548"
+                                height="548"
+                                loading="lazy"
                             />
                         </div>
 
@@ -121,6 +138,9 @@
                             <img
                                 src="./images/content2.jpg"
                                 alt="Services photo"
+                                width="548"
+                                height="548"
+                                loading="lazy"
                             />
                             <div>
                                 <span>Overline</span>
@@ -160,6 +180,9 @@
                             <img
                                 src="./images/content3.jpg"
                                 alt="Services photo"
+                                width="548"
+                                height="548"
+                                loading="lazy"
                             />
                         </div>
 
@@ -167,46 +190,121 @@
 
                         <div class="testimonals">
                             <span>Referencje</span>
-                            <h2>Poznaj opinie naszych klientów</h2>
-                            <div class="testimonal-slider">
-                                <div class="left-testimonal-btn">
+                            <h2 class="testimonals__heading">
+                                Poznaj opinie naszych klientów
+                            </h2>
+                            <img
+                                src="./icons/quote.svg"
+                                alt="Quote icon"
+                                class="testimonal-quote-icon"
+                                width="30"
+                                height="20"
+                                loading="lazy"
+                            />
+                            <div class="testimonals__slider">
+                                <div class="testimonals__slider-left-btn">
                                     <img
                                         src="./icons/left-arrow.svg"
                                         alt="Left arrow"
+                                        class="testimonals__btn"
+                                        width="40"
+                                        height="40"
+                                        loading="lazy"
                                     />
                                 </div>
-                                <div class="testimonal-slider-content">
-                                    <img
-                                        src="./icons/quote.svg"
-                                        alt="Quote icon"
-                                        class="testimonal-quote-icon"
-                                    />
-                                    <p class="testimonal-slider-text">
-                                        But I must explain to you how all this
-                                        mistaken idea of denouncing pleasure and
-                                        praising pain was born and I will give
-                                        you a complete account of the system.
-                                        But I must explain to you how all this
-                                        mistaken idea of denouncing pleasure and
-                                        praising pain was born and I will give
-                                        you a complete account of the system.
-                                    </p>
-                                    <img
-                                        src="./images/testimonal-person.jpg"
-                                        alt="Photo of Jan Kowalski"
-                                        class="testimonal-slider-avatar"
-                                    />
-                                    <p class="testimonal-slider-user">
-                                        Jan Kowalski
-                                    </p>
-                                    <p class="testimonal-slider-user-title">
-                                        Firma Jana Kowalskiego
-                                    </p>
+                                <div class="testimonals__container">
+                                    <div class="testimonal">
+                                        <p class="testimonal__text">
+                                            But I must explain to you how all
+                                            this mistaken idea of denouncing
+                                            pleasure and praising pain was born
+                                            and I will give you a complete
+                                            account of the system. But I must
+                                            explain to you how all this mistaken
+                                            idea of denouncing pleasure and
+                                            praising pain was born and I will
+                                            give you a complete account of the
+                                            system.
+                                        </p>
+                                        <img
+                                            src="./images/testimonal-person.jpg"
+                                            alt="Photo of Jan Kowalski"
+                                            class="testimonal__user-avatar"
+                                            width="46"
+                                            height="46"
+                                            loading="lazy"
+                                        />
+                                        <p class="testimonal__user">
+                                            Jan Kowalski
+                                        </p>
+                                        <p class="testimonal__user-title">
+                                            Firma Jana Kowalskiego
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonal testimonal--hidden">
+                                        <p class="testimonal__text">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. Ut
+                                            ultrices nulla id nisi ultricies,
+                                            ornare vulputate odio consequat.
+                                            Nunc ultrices, lorem maximus lacinia
+                                            tincidunt, ipsum nisi semper augue,
+                                            vitae posuere leo libero in erat.
+                                            Praesent commodo iaculis nulla vel
+                                            aliquet. 
+                                        </p>
+                                        <img
+                                            src="./images/testimonal-person.jpg"
+                                            alt="Photo of Jan Kowalski"
+                                            class="testimonal__user-avatar"
+                                            width="46"
+                                            height="46"
+                                            loading="lazy"
+                                        />
+                                        <p class="testimonal__user">
+                                            Kamil Nowak
+                                        </p>
+                                        <p class="testimonal__user-title">
+                                            Firma Kamila Nowaka
+                                        </p>
+                                    </div>
+
+                                    <div class="testimonal testimonal--hidden">
+                                        <p class="testimonal__text">
+                                            In sed molestie mauris. Ut
+                                            bibendum arcu in ex eleifend
+                                            sollicitudin. Integer eget neque
+                                            suscipit, ornare dolor eget,
+                                            fermentum nisi. Nullam id leo
+                                            aliquet, ullamcorper elit sed,
+                                            faucibus odio. Suspendisse vehicula
+                                            velit in eros dapibus fringilla.
+                                        </p>
+                                        <img
+                                            src="./images/testimonal-person.jpg"
+                                            alt="Photo of Jan Kowalski"
+                                            class="testimonal__user-avatar"
+                                            width="46"
+                                            height="46"
+                                            loading="lazy"
+                                        />
+                                        <p class="testimonal__user">
+                                            Nowak Paweł
+                                        </p>
+                                        <p class="testimonal__user-title">
+                                            Firma Pawła Nowaka
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="right-testimonal-btn">
+                                <div class="testimonals__slider-right-btn">
                                     <img
                                         src="./icons/right-arrow.svg"
                                         alt="right-arrow"
+                                        class="testimonals__btn"
+                                        width="40"
+                                        height="40"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -226,6 +324,9 @@
                             src="./images/article1.jpg"
                             alt="Photo of people on the work meeting"
                             class="article-photo"
+                            width="432"
+                            height="320"
+                            loading="lazy"
                         />
                         <span>Kategoria</span>
                         <h3>
@@ -240,6 +341,9 @@
                             <img
                                 src="./icons/calendar.svg"
                                 alt="Calendar icon"
+                                width="14"
+                                height="16"
+                                loading="lazy"
                             />
                             <p>13.12.2021</p>
                         </div>
@@ -250,6 +354,9 @@
                             src="./images/article2.jpg"
                             alt="Photo of people on the work meeting"
                             class="article-photo"
+                            width="432"
+                            height="320"
+                            loading="lazy"
                         />
                         <span>Kategoria</span>
                         <h3>
@@ -264,6 +371,9 @@
                             <img
                                 src="./icons/calendar.svg"
                                 alt="Calendar icon"
+                                width="14"
+                                height="16"
+                                loading="lazy"
                             />
                             <p>13.12.2021</p>
                         </div>
@@ -274,6 +384,9 @@
                             src="./images/article3.jpg"
                             alt="Photo of people on the work meeting"
                             class="article-photo"
+                            width="432"
+                            height="320"
+                            loading="lazy"
                         />
                         <span>Kategoria</span>
                         <h3>
@@ -288,6 +401,9 @@
                             <img
                                 src="./icons/calendar.svg"
                                 alt="Calendar icon"
+                                width="14"
+                                height="16"
+                                loading="lazy"
                             />
                             <p>13.12.2021</p>
                         </div>
@@ -321,10 +437,16 @@
                                         placeholder="Imię"
                                         required
                                     />
-                                    <label for="fname" class="fname-label"
+                                    <label
+                                        for="fname"
+                                        class="fname-label input-container__label"
                                         >Imię</label
                                     >
-                                    <p for="fname" class="input-error-notification fname-error">To pole jest wymagane</p>
+                                    <p
+                                        class="input-error-notification fname-error"
+                                    >
+                                        To pole jest wymagane
+                                    </p>
                                 </div>
                                 <div class="input-medium">
                                     <input
@@ -334,10 +456,16 @@
                                         placeholder="Nazwisko"
                                         required
                                     />
-                                    <label for="sname" class="sname-label"
+                                    <label
+                                        for="sname"
+                                        class="sname-label input-container__label"
                                         >Nazwisko</label
                                     >
-                                    <p class="input-error-notification sname-error">To pole jest wymagane</p>
+                                    <p
+                                        class="input-error-notification sname-error"
+                                    >
+                                        To pole jest wymagane
+                                    </p>
                                 </div>
                                 <div class="input-medium">
                                     <input
@@ -347,10 +475,16 @@
                                         placeholder="Adres e-mail"
                                         required
                                     />
-                                    <label for="email" class="email-label"
+                                    <label
+                                        for="email"
+                                        class="email-label input-container__label"
                                         >Adres e-mail</label
                                     >
-                                    <p class="input-error-notification email-error">Wpisz poprawny e-mail</p>
+                                    <p
+                                        class="input-error-notification email-error"
+                                    >
+                                        Wpisz poprawny e-mail
+                                    </p>
                                 </div>
                                 <div class="input-medium">
                                     <input
@@ -360,10 +494,16 @@
                                         placeholder="Numer telefonu"
                                         required
                                     />
-                                    <label for="tel" class="tel-label"
+                                    <label
+                                        for="tel"
+                                        class="tel-label input-container__label"
                                         >Numer Telefonu</label
                                     >
-                                    <p class="input-error-notification tel-error">Wpisz poprawny numer telefonu</p>
+                                    <p
+                                        class="input-error-notification tel-error"
+                                    >
+                                        Wpisz poprawny numer telefonu
+                                    </p>
                                 </div>
                                 <div class="input-textarea">
                                     <textarea
@@ -372,26 +512,42 @@
                                         placeholder="Twoja wiadomość"
                                         required
                                     ></textarea>
-                                    <label for="txt" class="txt-label"
+                                    <label
+                                        for="txt"
+                                        class="txt-label input-container__label"
                                         >Twoja wiadomość</label
                                     >
-                                    <p class="input-error-notification txt-error">To pole jest wymagane</p>
+                                    <p
+                                        class="input-error-notification txt-error"
+                                    >
+                                        To pole jest wymagane
+                                    </p>
+                                </div>
+                                <div class="checkbox-container">
+                                    <div class="custom-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            id="input-checkbox"
+                                            checked
+                                        />
+                                        <div class="checkmark"></div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <label
+                                        for="input-checkbox"
+                                        class="checkbox-container__label"
+                                        >Zapoznałem się z regulaminem i wyrażam
+                                        zgodę na przetwarzanie moich danych
+                                        osobowych przez Sungroup.pl
+                                    </label>
                                 </div>
                             </div>
-                            <div class="checkbox-container">
-                                <div class="custom-checkbox">
-                                    <input type="checkbox" checked />
-                                    <div class="checkmark"></div>
-                                    <div class="shadow"></div>
-                                </div>
-                                <label for="checkbox"
-                                    >Zapoznałem się z regulaminem i wyrażam
-                                    zgodę na przetwarzanie moich danych
-                                    osobowych przez Sungroup.pl
-                                </label>
-                            </div>
+
                             <div class="submit-container">
-                                <button type="submit" class="primary-btn input-submit-btn">
+                                <button
+                                    type="submit"
+                                    class="primary-btn input-submit-btn"
+                                >
                                     Wyślij wiadomość
                                 </button>
                             </div>
@@ -401,6 +557,9 @@
                         <img
                             src="./images/contact.jpg"
                             alt="Photo of people exchanging phone numbers"
+                            width="664px"
+                            height="686px"
+                            loading="lazy"
                         />
                     </div>
                 </div>
@@ -408,7 +567,13 @@
         </main>
         <footer class="footer">
             <div class="container upper-footer">
-                <img src="./images/SunPage.jpg" alt="SunPage logo" />
+                <img
+                    src="./images/SunPage.png"
+                    alt="SunPage logo"
+                    width="102"
+                    height="22"
+                    loading="lazy"
+                />
                 <ul>
                     <li><a href="#about">O nas</a></li>
                     <li><a href="#blog">Blog</a></li>
@@ -428,6 +593,9 @@
                             ><img
                                 src="./icons/facebook.svg"
                                 alt="Button to socials on Facebook"
+                                width="20"
+                                height="20"
+                                loading="lazy"
                         /></a>
                     </li>
                     <li>
@@ -435,6 +603,9 @@
                             ><img
                                 src="./icons/twitter.svg"
                                 alt="Button to socials on Twitter"
+                                width="20"
+                                height="20"
+                                loading="lazy"
                         /></a>
                     </li>
                     <li>
@@ -442,6 +613,9 @@
                             ><img
                                 src="./icons/linkedin.svg"
                                 alt="Button to socials on Linkedin"
+                                width="20"
+                                height="20"
+                                loading="lazy"
                         /></a>
                     </li>
                 </ul>
