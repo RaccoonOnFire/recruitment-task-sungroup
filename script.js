@@ -186,7 +186,7 @@ const nextTestimonalSlide = () => {
 const previousTestimonalSlide = () => {
     currentSlideID -= 1;
     if (currentSlideID == -1) {
-        currentSlideID = 2;
+        currentSlideID = testimonalsArray.length - 1;
     }
     testimonalsArray.forEach((element) =>
         element.classList.add("testimonal--hidden")
