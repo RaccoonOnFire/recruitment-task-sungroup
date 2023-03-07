@@ -174,24 +174,28 @@ const testimonalsArray = document.querySelectorAll(".testimonal");
 let currentSlideID = 0;
 
 const nextTestimonalSlide = () => {
-    currentSlideID += 1;
-    if (currentSlideID == testimonalsArray.length) {
-        currentSlideID = 0;
+    if (testimonalsArray) {
+        currentSlideID += 1;
+        if (currentSlideID == testimonalsArray.length) {
+            currentSlideID = 0;
+        }
+        testimonalsArray.forEach((element) =>
+            element.classList.add("testimonal--hidden")
+        );
+        testimonalsArray[currentSlideID].classList.remove("testimonal--hidden");
     }
-    testimonalsArray.forEach((element) =>
-        element.classList.add("testimonal--hidden")
-    );
-    testimonalsArray[currentSlideID].classList.remove("testimonal--hidden");
 };
 const previousTestimonalSlide = () => {
-    currentSlideID -= 1;
-    if (currentSlideID == -1) {
-        currentSlideID = testimonalsArray.length - 1;
+    if (testimonalsArray) {
+        currentSlideID -= 1;
+        if (currentSlideID == -1) {
+            currentSlideID = testimonalsArray.length - 1;
+        }
+        testimonalsArray.forEach((element) =>
+            element.classList.add("testimonal--hidden")
+        );
+        testimonalsArray[currentSlideID].classList.remove("testimonal--hidden");
     }
-    testimonalsArray.forEach((element) =>
-        element.classList.add("testimonal--hidden")
-    );
-    testimonalsArray[currentSlideID].classList.remove("testimonal--hidden");
 };
 
 rightTestimonalBtn.addEventListener("click", nextTestimonalSlide);
