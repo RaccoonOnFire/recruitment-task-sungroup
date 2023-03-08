@@ -1,40 +1,40 @@
 //hamburger menu script
 
 const body = document.querySelector("body");
-const headerMenu = document.querySelector(".header-menu");
-const hamburgerBtn = document.querySelector(".hamburger-menu");
-const aboutBtn = document.querySelector(".about-btn");
-const blogBtn = document.querySelector(".blog-btn");
-const contactBtn = document.querySelector(".contact-btn");
-const bar1 = document.querySelector("#bar1");
-const bar2 = document.querySelector("#bar2");
-const bar3 = document.querySelector("#bar3");
+const headerMenuContainer = document.querySelector(".header__menu-container");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const headerMenuAboutBtn = document.querySelector(".header__menu-about-btn");
+const headerMenuBlogBtn = document.querySelector(".header__menu-blog-btn");
+const headerMenuContactBtn = document.querySelector(".header__menu-contact-btn");
+const hamburgerMenuBar1 = document.querySelector("#hamburger-menu__bar1");
+const hamburgerMenuBar2 = document.querySelector("#hamburger-menu__bar2");
+const hamburgerMenuBar3 = document.querySelector("#hamburger-menu__bar3");
 
 const toggleMenu = () => {
     if (
-        headerMenu &&
-        hamburgerBtn &&
-        blogBtn &&
-        contactBtn &&
-        aboutBtn &&
-        bar1 &&
-        bar2 &&
-        bar3
+        headerMenuContainer &&
+        hamburgerMenu &&
+        headerMenuBlogBtn &&
+        headerMenuContactBtn &&
+        headerMenuAboutBtn &&
+        hamburgerMenuBar1 &&
+        hamburgerMenuBar2 &&
+        hamburgerMenuBar3
     ) {
         if (window.innerWidth < 821) {
-            body.classList.toggle("fixed-position");
-            headerMenu.classList.toggle("show-menu");
-            bar1.classList.toggle("bar1-animation");
-            bar2.classList.toggle("bar2-animation");
-            bar3.classList.toggle("bar3-animation");
+            body.classList.toggle("hidden-overlow");
+            headerMenuContainer.classList.toggle("header__menu--show-menu");
+            hamburgerMenuBar1.classList.toggle("hamburger-menu__bar1-animation");
+            hamburgerMenuBar2.classList.toggle("hamburger-menu__bar2-animation");
+            hamburgerMenuBar3.classList.toggle("hamburger-menu__bar3-animation");
         }
     }
 };
 
-hamburgerBtn.addEventListener("click", toggleMenu);
-blogBtn.addEventListener("click", toggleMenu);
-contactBtn.addEventListener("click", toggleMenu);
-aboutBtn.addEventListener("click", toggleMenu);
+hamburgerMenu.addEventListener("click", toggleMenu);
+headerMenuBlogBtn.addEventListener("click", toggleMenu);
+headerMenuContactBtn.addEventListener("click", toggleMenu);
+headerMenuAboutBtn.addEventListener("click", toggleMenu);
 
 //scroll script
 
@@ -43,123 +43,13 @@ let lastScrollY = window.scrollY;
 
 const scrollHandler = () => {
     if (lastScrollY < window.scrollY) {
-        header.classList.add("header-hidden");
+        header.classList.add("header--hidden");
     } else {
-        header.classList.remove("header-hidden");
+        header.classList.remove("header--hidden");
     }
     lastScrollY = window.scrollY;
 };
 window.addEventListener("scroll", scrollHandler);
-
-//input label script
-
-const fname = document.querySelector("#fname");
-const fnameLabel = document.querySelector(".fname-label");
-const sname = document.querySelector("#sname");
-const snameLabel = document.querySelector(".sname-label");
-const email = document.querySelector("#email");
-const emailLabel = document.querySelector(".email-label");
-const tel = document.querySelector("#tel");
-const telLabel = document.querySelector(".tel-label");
-const txt = document.querySelector("#txt");
-const txtLabel = document.querySelector(".txt-label");
-const fnameFunction = () => {
-    fname.value.length > 0
-        ? (fnameLabel.style.opacity = 1)
-        : (fnameLabel.style.opacity = 0);
-};
-fname.addEventListener("keyup", fnameFunction);
-
-const snameFunction = () => {
-    sname.value.length > 0
-        ? (snameLabel.style.opacity = 1)
-        : (snameLabel.style.opacity = 0);
-};
-sname.addEventListener("keyup", snameFunction);
-
-const emailFunction = () => {
-    email.value.length > 0
-        ? (emailLabel.style.opacity = 1)
-        : (emailLabel.style.opacity = 0);
-};
-email.addEventListener("keyup", emailFunction);
-
-const telFunction = () => {
-    tel.value.length > 0
-        ? (telLabel.style.opacity = 1)
-        : (telLabel.style.opacity = 0);
-};
-tel.addEventListener("keyup", telFunction);
-
-const txtFunction = () => {
-    txt.value.length > 0
-        ? (txtLabel.style.opacity = 1)
-        : (txtLabel.style.opacity = 0);
-};
-txt.addEventListener("keyup", txtFunction);
-
-const inputSubmitBtn = document.querySelector(".input-submit-btn");
-
-//validate form script
-const fnameError = document.querySelector(".fname-error");
-const snameError = document.querySelector(".sname-error");
-const emailError = document.querySelector(".email-error");
-const telError = document.querySelector(".tel-error");
-const txtError = document.querySelector(".txt-error");
-
-const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-const telRegex =
-    /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
-
-const validateForm = (event) => {
-    if (fname.value.length > 0) {
-        fname.classList.remove("input-error");
-        fname.classList.add("input-filled");
-        fnameError.style.opacity = 0;
-    } else {
-        fname.classList.add("input-error");
-        fnameError.style.opacity = 1;
-    }
-
-    if (sname.value.length > 0) {
-        sname.classList.remove("input-error");
-        sname.classList.add("input-filled");
-        snameError.style.opacity = 0;
-    } else {
-        sname.classList.add("input-error");
-        snameError.style.opacity = 1;
-    }
-
-    if (email.value.match(emailRegex)) {
-        email.classList.remove("input-error");
-        email.classList.add("input-filled");
-        emailError.style.opacity = 0;
-    } else {
-        email.classList.add("input-error");
-        emailError.style.opacity = 1;
-    }
-
-    if (tel.value.match(telRegex)) {
-        tel.classList.remove("input-error");
-        tel.classList.add("input-filled");
-        telError.style.opacity = 0;
-    } else {
-        tel.classList.add("input-error");
-        telError.style.opacity = 1;
-    }
-
-    if (txt.value.length > 0) {
-        txt.classList.remove("input-error");
-        txt.classList.add("input-filled");
-        txtError.style.opacity = 0;
-    } else {
-        txt.classList.add("input-error");
-        txtError.style.opacity = 1;
-    }
-    event.preventDefault();
-};
-
-inputSubmitBtn.addEventListener("click", validateForm);
 
 // testimonal slider script
 
@@ -200,3 +90,114 @@ const previousTestimonalSlide = () => {
 
 rightTestimonalBtn.addEventListener("click", nextTestimonalSlide);
 leftTestimonalBtn.addEventListener("click", previousTestimonalSlide);
+
+//input label script
+
+const firstNameInput = document.querySelector("#first-name-input");
+const firstNameLabel = document.querySelector(".first-name-label");
+const secondNameInput = document.querySelector("#second-name-input");
+const secondNameLabel = document.querySelector(".second-name-label");
+const emailInput = document.querySelector("#email-input");
+const emailLabel = document.querySelector(".email-label");
+const telInput = document.querySelector("#tel-input");
+const telLabel = document.querySelector(".tel-label");
+const textInput = document.querySelector("#txt-input");
+const textLabel = document.querySelector(".txt-label");
+const fnameFunction = () => {
+    firstNameInput.value.length > 0
+        ? (firstNameLabel.style.opacity = 1)
+        : (firstNameLabel.style.opacity = 0);
+};
+firstNameInput.addEventListener("keyup", fnameFunction);
+
+const snameFunction = () => {
+    secondNameInput.value.length > 0
+        ? (secondNameLabel.style.opacity = 1)
+        : (secondNameLabel.style.opacity = 0);
+};
+secondNameInput.addEventListener("keyup", snameFunction);
+
+const emailFunction = () => {
+    emailInput.value.length > 0
+        ? (emailLabel.style.opacity = 1)
+        : (emailLabel.style.opacity = 0);
+};
+emailInput.addEventListener("keyup", emailFunction);
+
+const telFunction = () => {
+    telInput.value.length > 0
+        ? (telLabel.style.opacity = 1)
+        : (telLabel.style.opacity = 0);
+};
+telInput.addEventListener("keyup", telFunction);
+
+const txtFunction = () => {
+    textInput.value.length > 0
+        ? (textLabel.style.opacity = 1)
+        : (textLabel.style.opacity = 0);
+};
+textInput.addEventListener("keyup", txtFunction);
+
+const inputSubmitBtn = document.querySelector(".input-submit-btn");
+
+//validate form script
+const firstNameInputError = document.querySelector(".input__first-name-error");
+const secondNameInputError = document.querySelector(".input__second-name-error");
+const emailInputError = document.querySelector(".input__email-error");
+const telInputError = document.querySelector(".input__tel-error");
+const textInputError = document.querySelector(".input__text-error");
+
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const telRegex =
+    /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+
+const validateForm = (event) => {
+    if (firstNameInput.value.length > 0) {
+        firstNameInput.classList.remove("input--error");
+        firstNameInput.classList.add("input--filled");
+        firstNameInputError.style.opacity = 0;
+    } else {
+        firstNameInput.classList.add("input--error");
+        firstNameInputError.style.opacity = 1;
+    }
+
+    if (secondNameInput.value.length > 0) {
+        secondNameInput.classList.remove("input--error");
+        secondNameInput.classList.add("input--filled");
+        secondNameInputError.style.opacity = 0;
+    } else {
+        secondNameInput.classList.add("input--error");
+        secondNameInputError.style.opacity = 1;
+    }
+
+    if (emailInput.value.match(emailRegex)) {
+        emailInput.classList.remove("input--error");
+        emailInput.classList.add("input--filled");
+        emailInputError.style.opacity = 0;
+    } else {
+        emailInput.classList.add("input--error");
+        emailInputError.style.opacity = 1;
+    }
+
+    if (telInput.value.match(telRegex)) {
+        telInput.classList.remove("input--error");
+        telInput.classList.add("input--filled");
+        telInputError.style.opacity = 0;
+    } else {
+        telInput.classList.add("input--error");
+        telInputError.style.opacity = 1;
+    }
+
+    if (textInput.value.length > 0) {
+        textInput.classList.remove("input--error");
+        textInput.classList.add("input--filled");
+        textInputError.style.opacity = 0;
+    } else {
+        textInput.classList.add("input--error");
+        textInputError.style.opacity = 1;
+    }
+    event.preventDefault();
+};
+
+inputSubmitBtn.addEventListener("click", validateForm);
+

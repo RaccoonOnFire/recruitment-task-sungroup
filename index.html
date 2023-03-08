@@ -10,38 +10,41 @@
     </head>
     <body>
         <header class="header">
-            <div class="container header-wrapper">
+            <div class="header__wrapper container">
                 <a href="#"
                     ><img
                         src="./images/SunPage.png"
                         alt="SunPage logo"
+                        class="header__image"
                         width="102"
                         height="22"
                         loading="lazy"
                     />
                 </a>
-                <div class="header-menu">
-                    <ul>
-                        <li><a href="#about" class="about-btn">O nas</a></li>
-                        <li><a href="#blog" class="blog-btn">Blog</a></li>
-                        <li>
-                            <a href="#contact" class="contact-btn">Kontakt</a>
+                <div class="header__menu-container">
+                    <ul class="header__menu">
+                        <li class="header__menu-link"><a href="#about" class="header__menu-about-btn">O nas</a></li>
+                        <li class="header__menu-link"><a href="#blog" class="header__menu-blog-btn">Blog</a></li>
+                        <li class="header__menu-link">
+                            <a href="#contact" class="header__menu-contact-btn">Kontakt</a>
                         </li>
                     </ul>
-                    <button class="primary-btn">Porozmawiajmy</button>
+                    <button class="primary-btn header--btn">Porozmawiajmy</button>
                 </div>
                 <button class="hamburger-menu">
-                    <div id="bar1"></div>
-                    <div id="bar2"></div>
-                    <div id="bar3"></div>
+                    <div id="hamburger-menu__bar1" class="hamburger-menu__bar"></div>
+                    <div id="hamburger-menu__bar2" class="hamburger-menu__bar"></div>
+                    <div id="hamburger-menu__bar3" class="hamburger-menu__bar"></div>
                 </button>
             </div>
         </header>
         <main>
             <section class="about" id="about">
-                <div class="about-container">
-                    <h1>Nagłówek traktujący<br />o działalności firmy</h1>
-                    <p>
+                <div class="about__container">
+                    <h1 class="about__heading">
+                        Nagłówek traktujący<br />o działalności firmy
+                    </h1>
+                    <p class="about__text">
                         But I must explain to you how all this mistaken idea of
                         denouncing pleasure and praising pain was born and I
                         will give you a complete account of the system.
@@ -52,6 +55,7 @@
                     <img
                         src="./images/about.jpg"
                         alt="Photo of out team"
+                        class="about__image"
                         width="978"
                         height="800"
                         loading="lazy"
@@ -59,33 +63,33 @@
                 </div>
             </section>
 
-            <section class="container features">
+            <section class="features container">
                 <span>Overline</span>
-                <h2>Nagłówek w kilku słowach</h2>
-                <div class="features-items">
-                    <div class="feature-item">
+                <h2 class="features__heading">Nagłówek w kilku słowach</h2>
+                <div class="features__items">
+                    <div class="feature">
                         <img src="./icons/icon.svg" alt="" />
-                        <div class="feature-description">
+                        <div class="feature__description-container">
                             <h3>Nagłówek w kilku słowach</h3>
-                            <p>
+                            <p class="feature__description-text">
                                 But I must explain to you how all this mistaken
                                 idea of denouncing pleasure and praising pain
                                 was born.
                             </p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature">
                         <img src="./icons/icon.svg" alt="" />
-                        <div class="feature-description">
+                        <div class="feature__description-container">
                             <h3>Nagłówek w kilku słowach</h3>
-                            <p>
+                            <p class="feature__description-text">
                                 But I must explain to you how all this mistaken
                                 idea of denouncing pleasure and praising pain
                                 was born.
                             </p>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature">
                         <img
                             src="./icons/icon.svg"
                             alt=" "
@@ -93,9 +97,9 @@
                             height="56"
                             loading="lazy"
                         />
-                        <div class="feature-description">
+                        <div class="feature__description-container">
                             <h3>Nagłówek w kilku słowach</h3>
-                            <p>
+                            <p class="feature__description-text">
                                 But I must explain to you how all this mistaken
                                 idea of denouncing pleasure and praising pain
                                 was born.
@@ -107,15 +111,15 @@
 
             <section class="content">
                 <div class="container">
-                    <div class="content-items">
+                    <div class="content__layout">
                         <div class="content-item">
-                            <div>
+                            <div class="content-item__wrapper">
                                 <span>Overline</span>
-                                <h2>
+                                <h2 class="content-item__heading">
                                     Usługa oferowana<br />
                                     przez firmę
                                 </h2>
-                                <p>
+                                <p class="content-item__text">
                                     But I must explain to you how all this
                                     mistaken idea of denouncing pleasure and
                                     praising pain was born and I will give you a
@@ -128,6 +132,7 @@
                             <img
                                 src="./images/content1.jpg"
                                 alt="Services photo"
+                                class="content-item__image"
                                 width="548"
                                 height="548"
                                 loading="lazy"
@@ -138,17 +143,18 @@
                             <img
                                 src="./images/content2.jpg"
                                 alt="Services photo"
+                                class="content-item__image"
                                 width="548"
                                 height="548"
                                 loading="lazy"
                             />
-                            <div>
+                            <div class="content-item__wrapper">
                                 <span>Overline</span>
-                                <h2>
+                                <h2 class="content-item__heading">
                                     Usługa oferowana<br />
                                     przez firmę
                                 </h2>
-                                <p>
+                                <p class="content-item__text">
                                     But I must explain to you how all this
                                     mistaken idea of denouncing pleasure and
                                     praising pain was born and I will give you a
@@ -161,13 +167,13 @@
                         </div>
 
                         <div class="content-item">
-                            <div>
+                            <div class="content-item__wrapper">
                                 <span>Overline</span>
-                                <h2>
+                                <h2 class="content-item__heading">
                                     Usługa oferowana<br />
                                     przez firmę
                                 </h2>
-                                <p>
+                                <p class="content-item__text">
                                     But I must explain to you how all this
                                     mistaken idea of denouncing pleasure and
                                     praising pain was born and I will give you a
@@ -180,13 +186,14 @@
                             <img
                                 src="./images/content3.jpg"
                                 alt="Services photo"
+                                class="content-item__image"
                                 width="548"
                                 height="548"
                                 loading="lazy"
                             />
                         </div>
 
-                        <hr />
+                        <hr class="content__hr" />
 
                         <div class="testimonals">
                             <span>Referencje</span>
@@ -252,7 +259,7 @@
                                             tincidunt, ipsum nisi semper augue,
                                             vitae posuere leo libero in erat.
                                             Praesent commodo iaculis nulla vel
-                                            aliquet. 
+                                            aliquet.
                                         </p>
                                         <img
                                             src="./images/testimonal-person.jpg"
@@ -272,14 +279,14 @@
 
                                     <div class="testimonal testimonal--hidden">
                                         <p class="testimonal__text">
-                                            In sed molestie mauris. Ut
-                                            bibendum arcu in ex eleifend
-                                            sollicitudin. Integer eget neque
-                                            suscipit, ornare dolor eget,
-                                            fermentum nisi. Nullam id leo
-                                            aliquet, ullamcorper elit sed,
-                                            faucibus odio. Suspendisse vehicula
-                                            velit in eros dapibus fringilla.
+                                            In sed molestie mauris. Ut bibendum
+                                            arcu in ex eleifend sollicitudin.
+                                            Integer eget neque suscipit, ornare
+                                            dolor eget, fermentum nisi. Nullam
+                                            id leo aliquet, ullamcorper elit
+                                            sed, faucibus odio. Suspendisse
+                                            vehicula velit in eros dapibus
+                                            fringilla.
                                         </p>
                                         <img
                                             src="./images/testimonal-person.jpg"
@@ -313,229 +320,235 @@
                 </div>
             </section>
 
-            <section class="container blog" id="blog">
-                <div class="blog-heading">
+            <section class="blog container" id="blog">
+                <div class="blog__heading">
                     <h2>Blog</h2>
                     <button class="secondary-btn">Zobacz więcej</button>
                 </div>
-                <div class="blog-articles">
-                    <article>
+                <div class="blog__articles">
+                    <article class="article">
                         <img
                             src="./images/article1.jpg"
                             alt="Photo of people on the work meeting"
-                            class="article-photo"
+                            class="article__photo"
                             width="432"
                             height="320"
                             loading="lazy"
                         />
                         <span>Kategoria</span>
-                        <h3>
+                        <h3 class="article__heading">
                             Intrygujący tytuł artykułu do przeczytania przez
                             użytkownika
                         </h3>
-                        <p class="article-description">
+                        <p class="article__description">
                             But I must explain to you how all this mistaken idea
                             of denouncing pleasure and praising pain.
                         </p>
-                        <div class="article-date-container">
+                        <div class="article__date-container">
                             <img
                                 src="./icons/calendar.svg"
                                 alt="Calendar icon"
+                                class="article__date-image"
                                 width="14"
                                 height="16"
                                 loading="lazy"
                             />
-                            <p>13.12.2021</p>
+                            <p class="article__date-day">13.12.2021</p>
                         </div>
                     </article>
 
-                    <article>
+                    <article class="article">
                         <img
                             src="./images/article2.jpg"
                             alt="Photo of people on the work meeting"
-                            class="article-photo"
+                            class="article__photo"
                             width="432"
                             height="320"
                             loading="lazy"
                         />
                         <span>Kategoria</span>
-                        <h3>
+                        <h3 class="article__heading">
                             Intrygujący tytuł artykułu do przeczytania przez
                             użytkownika
                         </h3>
-                        <p class="article-description">
+                        <p class="article__description">
                             But I must explain to you how all this mistaken idea
                             of denouncing pleasure and praising pain.
                         </p>
-                        <div class="article-date-container">
+                        <div class="article__date-container">
                             <img
                                 src="./icons/calendar.svg"
                                 alt="Calendar icon"
+                                class="article__date-image"
                                 width="14"
                                 height="16"
                                 loading="lazy"
                             />
-                            <p>13.12.2021</p>
+                            <p class="article__date-day">13.12.2021</p>
                         </div>
                     </article>
 
-                    <article>
+                    <article class="article">
                         <img
                             src="./images/article3.jpg"
                             alt="Photo of people on the work meeting"
-                            class="article-photo"
+                            class="article__photo"
                             width="432"
                             height="320"
                             loading="lazy"
                         />
                         <span>Kategoria</span>
-                        <h3>
+                        <h3 class="article__heading">
                             Intrygujący tytuł artykułu do przeczytania przez
                             użytkownika
                         </h3>
-                        <p class="article-description">
+                        <p class="article__description">
                             But I must explain to you how all this mistaken idea
                             of denouncing pleasure and praising pain.
                         </p>
-                        <div class="article-date-container">
+                        <div class="article__date-container">
                             <img
                                 src="./icons/calendar.svg"
                                 alt="Calendar icon"
+                                class="article__date-image"
                                 width="14"
                                 height="16"
                                 loading="lazy"
                             />
-                            <p>13.12.2021</p>
+                            <p class="article__date-day">13.12.2021</p>
                         </div>
                     </article>
                 </div>
             </section>
 
-            <section class="container cta">
-                <div class="cta-content">
-                    <span>Overline</span>
-                    <h2>Przekonujący nagłówek w CTA</h2>
-                    <p>
+            <section class="cta container">
+                <div class="cta__content">
+                    <span class="cta__span">Overline</span>
+                    <h2 class="cta__heading">Przekonujący nagłówek w CTA</h2>
+                    <p class="cta__text">
                         But I must explain to you how all this mistaken idea of
                         denouncing pleasure and praising pain was born.
                     </p>
-                    <button class="primary-btn">Napisz do nas</button>
+                    <button class="primary-btn cta--btn">Napisz do nas</button>
                 </div>
             </section>
 
             <section class="contact" id="contact">
-                <div class="container contact-layout">
-                    <div class="contact-form-container">
-                        <h2>Napisz do nas</h2>
-                        <form action="">
-                            <div class="input-container">
-                                <div class="input-medium">
+                <div class="contact__layout container">
+                    <div class="contact__form-container">
+                        <h2 class="contact__heading">Napisz do nas</h2>
+                        <form action="" class="form">
+                            <div class="form__input-container">
+                                <div class="form__input-element input--medium">
                                     <input
                                         type="text"
-                                        class="input-medium"
-                                        id="fname"
+                                        id="first-name-input"
+                                        class="form__input input--medium"
                                         placeholder="Imię"
                                         required
                                     />
                                     <label
-                                        for="fname"
-                                        class="fname-label input-container__label"
+                                        for="first-name-input"
+                                        class="input-container__label first-name-label"
                                         >Imię</label
                                     >
                                     <p
-                                        class="input-error-notification fname-error"
+                                        class="input__error-notification input__first-name-error"
                                     >
                                         To pole jest wymagane
                                     </p>
                                 </div>
-                                <div class="input-medium">
+                                <div class="form__input-element input--medium">
                                     <input
                                         type="text"
-                                        class="input-medium"
-                                        id="sname"
+                                        id="second-name-input"
+                                        class="form__input input--medium"
                                         placeholder="Nazwisko"
                                         required
                                     />
                                     <label
-                                        for="sname"
-                                        class="sname-label input-container__label"
+                                        for="second-name-input"
+                                        class="input-container__label second-name-label"
                                         >Nazwisko</label
                                     >
                                     <p
-                                        class="input-error-notification sname-error"
+                                        class="input__error-notification input__second-name-error"
                                     >
                                         To pole jest wymagane
                                     </p>
                                 </div>
-                                <div class="input-medium">
+                                <div class="form__input-element input--medium">
                                     <input
                                         type="email"
-                                        class="input-medium"
-                                        id="email"
+                                        id="email-input"
+                                        class="form__input input--medium"
                                         placeholder="Adres e-mail"
                                         required
                                     />
                                     <label
-                                        for="email"
-                                        class="email-label input-container__label"
+                                        for="email-input"
+                                        class="input-container__label email-label"
                                         >Adres e-mail</label
                                     >
                                     <p
-                                        class="input-error-notification email-error"
+                                        class="input__error-notification input__email-error"
                                     >
                                         Wpisz poprawny e-mail
                                     </p>
                                 </div>
-                                <div class="input-medium">
+                                <div class="form__input-element input--medium">
                                     <input
                                         type="tel"
-                                        class="input-medium"
-                                        id="tel"
+                                        id="tel-input"
+                                        class="form__input input--medium"
                                         placeholder="Numer telefonu"
                                         required
                                     />
                                     <label
-                                        for="tel"
-                                        class="tel-label input-container__label"
+                                        for="tel-input"
+                                        class="input-container__label tel-label"
                                         >Numer Telefonu</label
                                     >
                                     <p
-                                        class="input-error-notification tel-error"
+                                        class="input__error-notification input__tel-error"
                                     >
                                         Wpisz poprawny numer telefonu
                                     </p>
                                 </div>
-                                <div class="input-textarea">
+                                <div
+                                    class="form__input-element input--textarea"
+                                >
                                     <textarea
-                                        class="input-textarea"
-                                        id="txt"
+                                        id="txt-input"
+                                        class="form__textarea input--textarea"
                                         placeholder="Twoja wiadomość"
                                         required
                                     ></textarea>
                                     <label
-                                        for="txt"
-                                        class="txt-label input-container__label"
+                                        for="txt-input"
+                                        class="input-container__label txt-label"
                                         >Twoja wiadomość</label
                                     >
                                     <p
-                                        class="input-error-notification txt-error"
+                                        class="input__error-notification input__error-notification--textarea input__text-error"
                                     >
                                         To pole jest wymagane
                                     </p>
                                 </div>
-                                <div class="checkbox-container">
-                                    <div class="custom-checkbox">
+                                <div class="checkbox">
+                                    <div class="checkbox__custom">
                                         <input
                                             type="checkbox"
                                             id="input-checkbox"
+                                            class="checkbox__input"
                                             checked
                                         />
-                                        <div class="checkmark"></div>
-                                        <div class="shadow"></div>
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__shadow"></div>
                                     </div>
                                     <label
                                         for="input-checkbox"
-                                        class="checkbox-container__label"
+                                        class="checkbox__label"
                                         >Zapoznałem się z regulaminem i wyrażam
                                         zgodę na przetwarzanie moich danych
                                         osobowych przez Sungroup.pl
@@ -553,10 +566,11 @@
                             </div>
                         </form>
                     </div>
-                    <div class="contact-image-container">
+                    <div class="contact__image-container">
                         <img
                             src="./images/contact.jpg"
                             alt="Photo of people exchanging phone numbers"
+                            class="contact__imgage"
                             width="664px"
                             height="686px"
                             loading="lazy"
@@ -566,30 +580,45 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="container upper-footer">
+            <div class="footer__upper container">
                 <img
                     src="./images/SunPage.png"
                     alt="SunPage logo"
+                    class="footer__upper-img"
                     width="102"
                     height="22"
                     loading="lazy"
                 />
-                <ul>
-                    <li><a href="#about">O nas</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                <ul class="footer__upper-menu">
+                    <li class="footer__upper-menu-item">
+                        <a href="#about">O nas</a>
+                    </li>
+                    <li class="footer__upper-menu-item">
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li class="footer__upper-menu-item">
+                        <a href="#contact">Kontakt</a>
+                    </li>
                 </ul>
             </div>
-            <hr />
-            <div class="container lower-footer">
-                <ul class="footer-copywrights">
+            <hr class="footer__hr" />
+            <div class="footer__lower container">
+                <ul class="footer__lower-copywrights">
                     <li>© Copyrights 2021 Sungroup</li>
-                    <li><a href="">Polityka prywatności</a></li>
-                    <li><a href="">Regulamin</a></li>
-                </ul>
-                <ul class="footer-socials">
                     <li>
-                        <a href="#"
+                        <a href="" class="footer__lower-copywrights-link"
+                            >Polityka prywatności</a
+                        >
+                    </li>
+                    <li>
+                        <a href="" class="footer__lower-copywrights-link"
+                            >Regulamin</a
+                        >
+                    </li>
+                </ul>
+                <ul class="footer__lower-socials">
+                    <li>
+                        <a href="#" class="footer__lower-socials-link"
                             ><img
                                 src="./icons/facebook.svg"
                                 alt="Button to socials on Facebook"
@@ -599,7 +628,7 @@
                         /></a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#" class="footer__lower-socials-link"
                             ><img
                                 src="./icons/twitter.svg"
                                 alt="Button to socials on Twitter"
@@ -609,7 +638,7 @@
                         /></a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#" class="footer__lower-socials-link"
                             ><img
                                 src="./icons/linkedin.svg"
                                 alt="Button to socials on Linkedin"

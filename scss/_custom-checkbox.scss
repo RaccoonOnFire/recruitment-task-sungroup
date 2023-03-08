@@ -1,13 +1,14 @@
 @use "./colors" as colors;
 
-.custom-checkbox {
+.checkbox__custom {
     display: block;
     position: relative;
     width: 20px;
     height: 20px;
     font-size: 22px;
 }
-.custom-checkbox input {
+
+.checkbox__input{
     position: absolute;
     top: 4px;
     opacity: 0;
@@ -16,7 +17,7 @@
     cursor: pointer;
     z-index: 3;
 }
-.checkmark {
+.checkbox__checkmark {
     position: absolute;
     top: 4px;
     height: 20px;
@@ -28,9 +29,9 @@
     z-index: 2;
 }
 
-.shadow {
+.checkbox__shadow {
     position: absolute;
-    top: -24px;
+    top: -4px;
     left: -8px;
     width: 36px;
     height: 36px;
@@ -39,28 +40,28 @@
     transition: background-color 0.2s;
     z-index: 1;
 }
-.custom-checkbox input:hover + .checkmark {
+.checkbox__custom input:hover + .checkbox__checkmark {
     border: 1px solid colors.$primary-color;
 }
-.custom-checkbox input:hover ~ .shadow {
+.checkbox__custom input:hover ~ .checkbox__shadow {
     background-color: #e5eeff;
 }
-.custom-checkbox input:checked ~ .checkmark {
+.checkbox__custom input:checked ~ .checkbox__checkmark {
     background-color: colors.$primary-color;
 }
-.custom-checkbox input:checked ~ .checkmark {
+.checkbox__custom input:checked ~ .checkbox__checkmark {
     border: 1px solid colors.$primary-color;
 }
 
-.checkmark:after {
+.checkbox__checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
-.custom-checkbox input:checked ~ .checkmark:after {
+.checkbox__custom input:checked ~ .checkbox__checkmark:after {
     display: block;
 }
-.custom-checkbox .checkmark:after {
+.checkbox__custom .checkbox__checkmark:after {
     left: 6px;
     top: 2px;
     width: 4px;
